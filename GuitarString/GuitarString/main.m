@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
         // c. Call the method pluck(velocity: Float)
         [string pluck:0.5 error:&error];
         // d. Check if an error was returned
-        if (error != nil) {
+        if (error) {
             // e. Log an error if one was returned
             NSLog(@"Error: %@", error);
         }

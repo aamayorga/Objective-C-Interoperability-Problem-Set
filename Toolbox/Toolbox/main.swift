@@ -19,6 +19,8 @@ let tool = myToolbox.tools[randomIndex]
 
 if let tool = tool as? Drill {
    tool.screw()
+} else if let tool = tool as? Hammer {
+    tool.drive()
 } else {
-    print("No drill here.")
+    print("No drill or hammer here.")
 }
